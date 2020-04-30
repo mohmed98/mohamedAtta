@@ -1,0 +1,68 @@
+/* custom prop */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --headersFont: "Righteous", cursive;
+  --bodyFont: "Open Sans", sans-serif;
+  --regFontWight: 300;
+  --boldFontWight: 900;
+  --bgColor: #292929;
+  --headerColor: #22b9a2;
+  --bodyColor: #fff;
+  --pageHeaderColor: #b18789;
+}
+/* geenral setup */
+
+body {
+  background: var(--bgColor);
+  color: var(--bodyColor);
+  margin: 0;
+  font-family: var(--bodyFont);
+  line-height: 1.6;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+/* header stying */
+.header {
+  margin: 1rem 1rem 0 1rem;
+}
+.user {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.profPic {
+  grid-area: 1 / 1 / 3 / 2;
+}
+.PageHeader {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.subHeader {
+  grid-area: 2 / 2 / 3 / 3;
+}
+/* .user {
+  display: grid;
+  grid-template-columns: 130px auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "profPic title"
+    " subTitle";
+} */
+
+/* .profPic {
+  width: 133px;
+  height: auto;
+  border-radius: 5px;
+} */
+
+.PageHeader {
+  font-family: var(--headersFont);
+}
