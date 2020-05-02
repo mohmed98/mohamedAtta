@@ -28,15 +28,21 @@ img {
   max-width: 100%;
 }
 /* header stying */
-.header {
+.header,
+main {
   margin: 1rem 1rem 0 1rem;
 }
 .user {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
+  justify-content: start;
+  grid-template-columns: auto auto;
+  grid-column-gap: 1em;
   grid-row-gap: 0px;
+}
+.PageHeader,
+.subHeader {
+  color: var(--pageHeaderColor);
+  margin: 0;
 }
 
 .profPic {
@@ -44,25 +50,36 @@ img {
 }
 .PageHeader {
   grid-area: 1 / 2 / 2 / 3;
+  font-family: var(--headersFont);
+}
+.beta {
+  font-size: 0.5em;
+  font-weight: 300;
 }
 .subHeader {
+  font-size: 1.2em;
+  line-height: 25px;
   grid-area: 2 / 2 / 3 / 3;
 }
-/* .user {
-  display: grid;
-  grid-template-columns: 130px auto;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "profPic title"
-    " subTitle";
-} */
 
-/* .profPic {
-  width: 133px;
+.profPic {
+  width: 100%;
+  max-width: 130px;
   height: auto;
   border-radius: 5px;
-} */
-
-.PageHeader {
-  font-family: var(--headersFont);
+}
+.navBar {
+}
+.sticky {
+  position: fixed;
+  top: 0;
+}
+.navBar::after {
+  content: " ";
+  font-weight: 300;
+  color: var(--bodyFont);
+  display: block;
+  background: var(--headerColor);
+  width: 100%;
+  height: 2px;
 }
