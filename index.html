@@ -5,24 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/853f4b85a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Righteous&display=swap" rel="stylesheet">
     <title>Mohamed Atta</title>
 </head>
 
 <body>
-    <header>
-        <figure class="profilePictureArea">
-            <img src="images\profilePicture.jpg" alt="profile picture">
-            <figcaption>Random Photo of me</figcaption>
-        </figure>
-        <div class="userInfo">
-            <h1 class="PageHeader">MOHAMED ATTA</h1>
-            <span class="beta">(beta)</span>
+    <header class="header">
+        <div class="user">
+            <img src="images\profilePicture.jpg" alt="profile picture" class="profPic">
+            <h1 class="PageHeader">MOHAMED ATTA <span class="beta">(beta)</span></h1>
             <h2 class="subHeader">
                 Amateur rower/<br>
                 Computer science Student
             </h2>
         </div>
-        <nav>
+        <nav class="navBar" id="navbar">
             <a href="#home" class="navLink">Home</a>
             <a href="#aboutMe" class="navLink">About me</a>
             <a href="#programminBackground" class="navLink">Programmig background</a>
@@ -36,30 +34,31 @@
         <section id="aboutMe">
             <h2 class="sectionHeader">About me</h2>
             <p class="sectionParagraph">
-                I am Mohamed my English is far from good I use google translate more than Facebook, so if you sow any
-                mistakes in spelling or grammar please let me know.
+
+                My name is Mohamed, my English skills are far from good, I use google translate more than using
+                Facebook, so if you saw any spelling or grammar mistakes, please let me know.
                 <br>
-                I am Egyptian, born and raised in Cairo
+                I am Egyptian, who was born and raised in Cairo.
                 <br>
-                I am now a senior computer science student how was expected to gradate in next June but thank to
-                coronavirus and our government no one know when I will finish collage
+                I am a senior computer science student who was expected that I am going to graduate next June, but
+                thanks to coronavirus, no one knows when I am going to finish college.
                 <br>
-                I am a former volunteer in biggest charity organization in
-                the middle east called <span><a href="https://resala.org/" target="_blank" class="externalLink">Resala
-                        charity organization</a></span> I have been their since 2012, my specialty in clothing
-                distribution
+                I am a former volunteer in one of the biggest charity organization in the middle east called <span><a
+                        href="https://resala.org/" target="_blank" class="externalLink">Resala
+                        charity organization</a></span>,I have been volunteering there since 2012, my specialty is in
+                the clothing distribution.
             </p>
         </section>
         <section class="pgaeSection" id="programminBackground">
             <h2 class="sectionHeader">Programmig background</h2>
             <p class="sectionParagraph">
-                I didn't know anything about coding before collage but when I started coding I got hooked and kept
-                coding for fun and educational purpose till now
+                I didn't know anything about programming before college, but when I wrote my first program, I got hooked
+                in programming and kept programming for fun and educational purpose till now.
             </p>
         </section>
         <section class="pgaeSection" id="workExperience">
             <h2 class="sectionHeader">Work experience</h2>
-            <h3>All my work experience is summer internships</h3>
+            <h3>All my work experience is summer internships.</h3>
             <ul class="preWorkList">
                 <li class="worktime">summer 2018</li>
                 <ul class="prevWorkDetials">
@@ -68,8 +67,8 @@
                             target="_blank">saharagroup</a></li>
                     <li>work details: I managed developing multiple
                         WordPress websites one of them actually
-                        came to the light
-                        <a href="https://www.egytexfairs.com/" class="externalLink" target="_blank">EGYTEX</a>
+                        came to the light called
+                        <a href="https://www.egytexfairs.com/" class="externalLink" target="_blank">EGYTEX.</a>
                     </li>
                 </ul>
 
@@ -79,7 +78,7 @@
                     <li>company:<a href="https://arabtesting.com/" class="externalLink" target="_blank">ARABTESTING</a>
                     </li>
                     <li>work details: I was working on several flutter 2D games. unfortunately, it has not been
-                        published yet
+                        published yet.
                     </li>
                 </ul>
             </ul>
@@ -139,6 +138,7 @@
                 target="_blank">Download My
                 CV</a></span>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
