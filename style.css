@@ -15,7 +15,9 @@
   --pageHeaderColor: #b18789;
 }
 /* geenral setup */
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: var(--bgColor);
   color: var(--bodyColor);
@@ -124,7 +126,7 @@ main {
 }
 .externalLink {
   text-decoration: none;
-  color: #0000ff;
+  color: var(--pageHeaderColor);
   font-family: "Courier New", Courier, monospace;
 }
 .externalLink:hover,
@@ -141,7 +143,7 @@ main {
 }
 .sideProjects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: auto;
   justify-items: center;
   gap: 1em;
@@ -169,4 +171,63 @@ main {
   font-size: 1.5em;
   text-decoration: none;
   color: white;
+}
+.inActiveIconelink {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: white;
+}
+.iconLink:hover {
+  color: var(--headerColor);
+}
+.warining {
+  color: #9f6000;
+  background-color: #feefb3;
+  text-align: start;
+  padding: 5px;
+  border-radius: 3px;
+  width: max-content;
+  margin: auto;
+}
+
+/* footer style */
+.pageFooter {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1c1c;
+  padding-bottom: 1em;
+  margin-top: 2em;
+}
+.pageFooter > * {
+  margin-left: 1em;
+}
+.linksSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  justify-content: center;
+  margin-left: 2em;
+}
+.cV {
+  text-align: center;
+}
+.cV > a {
+  text-decoration: none;
+  background-color: var(--headerColor);
+  padding: 0.5em 1em;
+  color: var(--bodyColor);
+  font-weight: 900;
+  border-radius: 5px;
+}
+/* side projects items */
+#prsonalPortofolio {
+  background-size: contain;
+  background-image: url("images/persolna-protofolio-image.jpg");
+}
+.projectName {
+  background-color: rgba(220, 220, 220, 0.5);
+  width: max-content;
+  margin: auto;
+  padding: 3px;
+  border-radius: 3px;
 }
