@@ -8,3 +8,12 @@ function fixed_nav() {
     ? navbar.classList.add("sticky")
     : navbar.classList.remove("sticky");
 }
+
+function showNave() {
+  let nav = document.getElementById("navbar");
+  if (nav.className == "navBar") {
+    nav.className += " responsiveNav";
+  } else {
+    nav.className = "navBar";
+  }
+}
