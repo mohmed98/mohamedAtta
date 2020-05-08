@@ -70,29 +70,18 @@ img {
   border-radius: 5px;
 }
 /* responive header */
-@media only screen and (max-width: 700px) {
-  .header {
-    margin: 1em;
-  }
 
-  .PageHeader {
-    font-size: 1.7em;
-    grid-area: 1 / 1 / 1 / 3;
-  }
-  .subHeader {
-    font-size: 0.8em;
-    /* line-height: 25px; */
-    grid-area: 2 / 1 / 2 / 3;
-  }
-  .profPic {
-    grid-area: 3 / 1 / 3 / 3;
-    justify-self: center;
-  }
-}
 .navBar {
   background-color: var(--bgColor);
   width: max-content;
   padding-top: 0.5em;
+}
+.navBtn {
+  display: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
 }
 .sticky {
   position: fixed;
@@ -112,10 +101,14 @@ img {
   height: 2px;
 }
 .navLink {
+  padding: 3px;
   text-decoration: none;
   font-weight: 900;
   color: var(--bodyColor);
   margin-right: 1em;
+}
+.navLink:active {
+  border: none;
 }
 .navLink:last-of-type {
   margin-right: 0;
@@ -151,6 +144,8 @@ main {
 }
 .externalLink:hover,
 .navLink:hover {
+  border-radius: 3px;
+  background-color: var(--headerColor);
   text-decoration: underline;
 }
 .preWorkList {
@@ -250,4 +245,52 @@ main {
   margin: auto;
   padding: 3px;
   border-radius: 3px;
+}
+/* media q */
+@media only screen and (max-width: 700px) {
+  .header {
+    margin: 1em;
+  }
+  .PageHeader {
+    font-size: 1.7em;
+    grid-area: 1 / 1 / 1 / 3;
+  }
+  .subHeader {
+    font-size: 0.8em;
+    /* line-height: 25px; */
+    grid-area: 2 / 1 / 2 / 3;
+  }
+  .profPic {
+    grid-area: 3 / 1 / 3 / 3;
+    justify-self: center;
+  }
+  .navBtn {
+    align-self: end;
+    font-size: 2em;
+    display: block;
+  }
+  .navLink {
+    display: none;
+  }
+  .navBar {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+  }
+  .navBar::after {
+    display: none;
+  }
+  .responsiveNav {
+    width: calc(100% - 1em);
+    display: flex;
+    flex-direction: column;
+  }
+  .responsiveNav .navLink {
+    padding-left: 0.5em;
+    display: inline;
+    text-align: left;
+  }
+  .navLink:hover {
+    background-color: var(--headerColor);
+  }
 }
