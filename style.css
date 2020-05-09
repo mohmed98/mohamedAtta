@@ -19,6 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  /* font-size: calc(0.75em + 1vmin); */
   background: var(--bgColor);
   color: var(--bodyColor);
   margin: 0;
@@ -107,12 +108,11 @@ img {
   color: var(--bodyColor);
   margin-right: 1em;
 }
-.navLink:active {
-  border: none;
-}
+
 .navLink:last-of-type {
   margin-right: 0;
 }
+
 .sectionHeader::before {
   content: " ";
   display: block;
@@ -133,20 +133,19 @@ main {
   font-size: 1em;
   margin-left: 0.5em;
 }
-.sectionParagraph {
+/* .sectionParagraph {
   margin: 0;
   width: 700px;
-}
+} */
 .externalLink {
   text-decoration: none;
   color: var(--pageHeaderColor);
-  font-family: "Courier New", Courier, monospace;
+  /* font-family: "Courier New", Courier, monospace; */
 }
 .externalLink:hover,
 .navLink:hover {
-  border-radius: 3px;
-  background-color: var(--headerColor);
-  text-decoration: underline;
+  color: #000;
+  background-color: #fff;
 }
 .preWorkList {
   margin: 0;
@@ -265,9 +264,10 @@ main {
     justify-self: center;
   }
   .navBtn {
-    align-self: end;
-    font-size: 2em;
-    display: block;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
   }
   .navLink {
     display: none;
@@ -290,7 +290,16 @@ main {
     display: inline;
     text-align: left;
   }
-  .navLink:hover {
-    background-color: var(--headerColor);
+
+  main {
+    margin: 0 1em;
+  }
+  .linkItem span {
+    display: none;
+  }
+  .linksSection {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em 0;
   }
 }
