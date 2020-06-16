@@ -157,19 +157,17 @@ main {
 }
 .sideProjects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: auto;
   justify-items: center;
   gap: 1em;
 }
 .projectitem {
-  width: 250px;
-  height: 150px;
-  padding: 1em;
+  width: 300px;
+  height: 200px;
+  padding-bottom: 1em;
   border-radius: 5px;
   display: flex;
-  justify-content: center;
-  align-content: center;
   text-align: center;
   flex-direction: column;
   background-image: linear-gradient(
@@ -216,11 +214,10 @@ main {
   margin-left: 1em;
 }
 .linksSection {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  justify-content: center;
-  margin-left: 2em;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1em auto;
 }
 .cV {
   text-align: center;
@@ -238,10 +235,19 @@ main {
   background-size: contain;
   background-image: url("images/persolna-protofolio-image.jpg");
 }
+#landingPage {
+  background-size: cover;
+  background-image: url("images/landingPage.jpg");
+  background-repeat: no-repeat;
+}
 .projectName {
-  background-color: rgba(220, 220, 220, 0.5);
-  width: max-content;
-  margin: auto;
+  /* background-color: rgba(220, 220, 220, 0.5); */
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  margin: 0 auto auto auto;
+  /* position: relative;
+  top: 0; */
   padding: 3px;
   border-radius: 3px;
 }
@@ -298,8 +304,6 @@ main {
     display: none;
   }
   .linksSection {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 1em 0;
+    width: 100%;
   }
 }
