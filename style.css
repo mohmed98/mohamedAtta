@@ -240,6 +240,10 @@ main {
   background-image: url("images/landingPage.jpg");
   background-repeat: no-repeat;
 }
+#compareCitiesWeather {
+  background-size: contain;
+  background-image: url("images/compareCities.jpg");
+}
 .projectName {
   /* background-color: rgba(220, 220, 220, 0.5); */
   background-color: #fff;
