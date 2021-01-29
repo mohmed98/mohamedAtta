@@ -16,12 +16,32 @@
 <body>
     <header class="header">
         <div class="user">
-            <img src="images\profilePicture.jpg" alt="profile picture" class="profPic">
+            <img src="images\pp.jpg" alt="profile picture" class="profPic">
             <h1 class="PageHeader">MOHAMED ATTA <span class="beta">(beta)</span></h1>
             <h2 class="subHeader">
-                Amateur rower/<br>
-                Computer science Student
+                Amateur rower/
+                software developer
             </h2>
+            <div class="headerLinksSection">
+
+                <div class="linkItem">
+                    <a href="https://twitter.com/mohamed_atta98" target="_blank" class="iconLink" title="Twitter"><i
+                            class="fab fa-twitter-square"></i></a>
+                    <!-- <span>https://twitter.com/mohamed_atta98</span> -->
+                </div>
+                <div class="linkItem">
+                    <a href="https://www.linkedin.com/in/mohamed-atta-1aa28a168" target="_blank" class="iconLink"
+                        title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <!-- <span>https://www.linkedin.com/in/mohamed-atta-1aa28a168</span> -->
+                </div>
+                <div class="linkItem">
+                    <a href="https://github.com/mohmed98" target="_blank" class="iconLink" title="Github"><i
+                            class="fab fa-github-square"></i></a>
+                    <!-- <span>https://github.com/mohmed98</span> -->
+                </div>
+
+            </div>
+
         </div>
         <nav class="navBar" id="navbar">
             <button onclick="showNave()" class="navBtn"><i class="fas fa-bars"></i></button>
@@ -35,23 +55,22 @@
         </nav>
     </header>
     <main id="home">
-        <section id="aboutMe">
+        <!-- <section id="aboutMe">
             <h2 class="sectionHeader">About me</h2>
             <p class="sectionParagraph">
 
-                <!-- My name is Mohamed, my English skills are far from good, I use google translate more than using
+                My name is Mohamed, my English skills are far from good, I use google translate more than using
                 Facebook, so if you saw any spelling or grammar mistakes, please let me know.
                 I am Egyptian, who was born and raised in Cairo.
                 <br> -->
-                I am a senior computer science student who was expected that I am going to graduate next June, but
-                thanks to coronavirus, no one knows when I am going to finish college.
-                <br>
-                I am a former volunteer in one of the biggest charity organization in the middle east called <span><a
+        <!-- I am a fresh computer graduate student, great rower  -->
+        <!-- <br> -->
+        <!-- I am a former volunteer in one of the biggest charity organization in the middle east called <span><a
                         href="https://resala.org/" target="_blank" class="externalLink">Resala
                         charity organization</a></span>, I have been volunteering there since 2012, my specialty is in
-                the clothing distribution.
-            </p>
-        </section>
+                the clothing distribution. -->
+        <!-- </p> -->
+        <!-- </section>  -->
         <section class="pgaeSection" id="programminBackground">
             <h2 class="sectionHeader">Programmig background</h2>
             <p class="sectionParagraph">
@@ -62,8 +81,33 @@
         <section class="pgaeSection" id="workExperience">
             <h2 class="sectionHeader">Work experience</h2>
             <div class="sectionParagraph">
-                <h3 class="subSecHeader">All my work experience is summer internships.</h3>
+                <!-- <h3 class="subSecHeader">All my work experience is summer internships.</h3> -->
                 <ul class="preWorkList">
+                    <li class="worktime">2020 - present</li>
+                    <ul class="prevWorkDetials">
+                        <li>job title: freelance web developer</li>
+                        <li>Upwork Link: <a href="https://www.upwork.com/freelancers/~019f843f8bbf306d51"
+                                class="externalLink" target="_blank">here</a></li>
+                        <li>recent work:
+
+                            <a href="https://www.skinnybulking.com/" class="externalLink"
+                                target="_blank">skinnybulking</a>
+                            <span> and </span>
+                            <a href="https://shadesofscents.com/" class="externalLink"
+                                target="_blank">shadesofscents</a>
+                        </li>
+                    </ul>
+                    <li class="worktime">2020 - 2021</li>
+                    <ul class="prevWorkDetials">
+                        <li>job title: WordPress developer</li>
+                        <li>company: <a href="http://www.saharagroup.com/" class="externalLink"
+                                target="_blank">saharagroup</a></li>
+                        <li>work details: I managed developing multiple
+
+                            <a href="https://nadracollection.com/" class="externalLink" target="_blank">Nadra
+                                Collection</a>
+                        </li>
+                    </ul>
                     <li class="worktime">summer 2018</li>
                     <ul class="prevWorkDetials">
                         <li>job title: WordPress developer</li>
@@ -90,6 +134,22 @@
             </div>
 
         </section>
+        <section class="pgaeSection" id="workExperience">
+            <h2 class="sectionHeader">open source contributions</h2>
+            <div class="sectionParagraph">
+                <!-- <h3 class="subSecHeader">All my work experience is summer internships.</h3> -->
+                <ul class="preWorkList">
+                    <li class="worktime"><a href="https://reach4help.org/" class="externalLink"
+                            target="_blank">reach4help</a></li>
+                    <ul class="prevWorkDetials">
+
+                        <li>repo Link: <a href="https://github.com/reach4help/reach4help" class="externalLink"
+                                target="_blank">here</a></li>
+                        <li>doing react stuff.
+                        </li>
+                    </ul>
+
+        </section>
         <section class="pgaeSection" id="sideProjects">
             <h2 class="sectionHeader">Side projects</h2>
             <div class="sideProjects">
@@ -103,31 +163,46 @@
                 <div class="projectitem" id="landingPage">
                     <span class="projectName">landing page</span>
                     <div class="itemIcons">
-                        <a class="iconLink" href="https://github.com/mohmed98/daynamiclandingPage"
-                            target="_blank"> <i class="fab fa-github"></i></a>
+                        <a class="iconLink" href="https://github.com/mohmed98/daynamiclandingPage" target="_blank"> <i
+                                class="fab fa-github"></i></a>
                     </div>
 
                 </div>
                 <div class="projectitem" id="compareCitiesWeather">
                     <span class="projectName">Compare Cities Weather</span>
                     <div class="itemIcons">
-                        <a class="iconLink" target="_blank" href="https://compareweather.netlify.app/"><i class="fas fa-link"></i></a>
+                        <a class="iconLink" target="_blank" href="https://compareweather.netlify.app/"><i
+                                class="fas fa-link"></i></a>
 
-                        <a class="iconLink" target="_blank" href="https://github.com/mohmed98/compare_cities"><i class="fab fa-github"></i></a>
+                        <a class="iconLink" target="_blank" href="https://github.com/mohmed98/compare_cities"><i
+                                class="fab fa-github"></i></a>
                     </div>
-                    
+
                     <!-- <span class="warining"><i class="fas fa-exclamation-triangle"></i></i> Under Progress</span> -->
 
                 </div>
-                <div class="projectitem">
-                    <span class="projectName">online Bookstore</span>
+                <div class="projectitem" id="githubActivity">
+                    <span class="projectName">Github activity clone</span>
                     <div class="itemIcons">
-                        <a class="inActiveIconelink"><i class="fab fa-github"></i></a>
-                        <a class="inActiveIconelink"><i class="fab fa-codepen"></i></a>
+                        <a class="iconLink" target="_blank" href="https://githubactivityclone.netlify.app/"><i
+                                class="fas fa-link"></i></a>
+
+                        <a class="iconLink" target="_blank" href="https://github.com/mohmed98/githubActicity"><i
+                                class="fab fa-github"></i></a>
                     </div>
-                    <span class="warining"><i class="fas fa-exclamation-triangle"></i></i> Under Progress</span>
+
+                    <!-- <span class="warining"><i class="fas fa-exclamation-triangle"></i></i> Under Progress</span> -->
 
                 </div>
+                <div class="projectitem" id="ninjaBlog">
+                    <span class="projectName">NINJA BLOG</span>
+                    <div class="itemIcons">
+                        <a class="iconLink" href="https://github.com/mohmed98/ninja-blog" target="_blank"> <i
+                                class="fab fa-github"></i></a>
+                    </div>
+
+                </div>
+
             </div>
         </section>
     </main>

@@ -34,12 +34,17 @@ img {
 .header {
   margin: 1rem 1rem 0 15%;
 }
-.user {
+/* .user {
   display: grid;
   justify-content: start;
   grid-template-columns: auto auto;
   grid-column-gap: 1em;
   grid-row-gap: 0px;
+} */
+.headerLinksSection {
+  justify-content: start;
+  display: flex;
+  grid-area: 3 / 3 / 3 / 2;
 }
 .PageHeader,
 .subHeader {
@@ -88,6 +93,8 @@ img {
   position: fixed;
   top: 0;
   width: max-content;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+  border-radius: 5px;
 }
 .sticky + main {
   padding-top: 100px;
@@ -183,6 +190,7 @@ main {
   font-size: 1.5em;
   text-decoration: none;
   color: white;
+  margin-right: 0.5rem;
 }
 .inActiveIconelink {
   font-size: 1.5em;
@@ -243,6 +251,15 @@ main {
 #compareCitiesWeather {
   background-size: contain;
   background-image: url("images/compareCities.jpg");
+}
+#githubActivity {
+  background-size: cover;
+  background-image: url("images/githubActivity.jpg");
+}
+#ninjaBlog {
+  background-size: cover;
+  background-image: url("images/ninja.jpg");
+  background-repeat: no-repeat;
 }
 .projectName {
   /* background-color: rgba(220, 220, 220, 0.5); */
@@ -309,5 +326,8 @@ main {
   }
   .linksSection {
     width: 100%;
+  }
+  .headerLinksSection {
+    grid-area: 4 / 3 / 3 / 2;
   }
 }
